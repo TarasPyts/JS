@@ -6,12 +6,11 @@ let i = 0;
                     "images/img4.jpg",
                     "images/img5.jpg"];
 
-function mySlide(param)
+function switchImages(param)
 {
-  if (param === 'next')
-  {
+  if (param === 'next') {
     i++;
-    if(i === images.length) { i = 0 }
+    if(i === images.length) i = 0 
   }else{
     i--;
     if(i < 0) { i = images.length -1 }
